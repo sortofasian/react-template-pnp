@@ -1,7 +1,8 @@
 {
     "env": {
         "browser": true,
-        "es2021": true
+        "es2021": true,
+        "jest": true
     },
     "extends": [
         "eslint:recommended",
@@ -19,6 +20,8 @@
     },
     "plugins": ["prettier", "react", "@typescript-eslint"],
     "rules": {
-        "prettier/prettier": "error"
+        "prettier/prettier": "error",
+        "react/react-in-jsx-scope": "off",
+        "react/jsx-filename-extension": [1, { "extensions": [".tsx", ".jsx"] }]
     }
 }
